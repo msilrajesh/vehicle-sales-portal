@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+#map {
+  height: 80vh;
+  width: 100%;
+}
+.filters {
+  text-align: center;
+  margin: 10px;
+}
+select {
+  margin: 5px;
+  padding: 5px;
+}
