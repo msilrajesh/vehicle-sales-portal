@@ -6,10 +6,10 @@ let salesData = [];
 let geojsonData;
 
 function loadDropdowns() {
-  const models = [...new Set(salesData.map(d => d.Model))];
-  const dealers = [...new Set(salesData.map(d => d.Dealer))];
-  const months = [...new Set(salesData.map(d => d.Month))];
-  const years = [...new Set(salesData.map(d => d.FinancialYear))];
+  const dealers = [...new Set(data.map(d => d.Dealer))].filter(Boolean);
+  const models = [...new Set(data.map(d => d.Model))].filter(Boolean);
+  const months = [...new Set(data.map(d => d.Month))].filter(Boolean);
+  const years = [...new Set(data.map(d => d.Financial_Year))].filter(Boolean);
 
   fillDropdown("modelDropdown", models);
   fillDropdown("dealerDropdown", dealers);
