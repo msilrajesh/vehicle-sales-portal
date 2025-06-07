@@ -36,7 +36,7 @@ function updateMap() {
   if (model !== 'All') filtered = filtered.filter(d => d.Model === model);
   if (dealer !== 'All') filtered = filtered.filter(d => d.Dealer === dealer);
   if (month !== 'All') filtered = filtered.filter(d => d.Month === month);
-  if (year !== 'All') filtered = filtered.filter(d => d.FinancialYear === year);
+  if (year !== 'All') filtered = filtered.filter(d => d.Financial_Year === year);
 
   const pincodeCount = {};
   filtered.forEach(d => {
