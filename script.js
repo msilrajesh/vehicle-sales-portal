@@ -63,7 +63,7 @@ function updateMap() {
   }).addTo(map);
 }
 
-fetch('sales_data.csv')
+fetch('sample_sales_data.csv')
   .then(response => response.text())
   .then(csv => {
     Papa.parse(csv, {
