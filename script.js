@@ -40,7 +40,7 @@ function updateMap() {
 
   const pincodeCount = {};
   filtered.forEach(d => {
-    pincodeCount[d.Pincode] = (pincodeCount[d.Pincode] || 0) + 1; // or +Number(d.Units_Sold) if you want total units
+    pincodeCount[d.Pincode] = (pincodeCount[d.Pincode] || 0) + Number(d.Units_Sold || 0);
   });
 
   if (geoLayer) map.removeLayer(geoLayer);
